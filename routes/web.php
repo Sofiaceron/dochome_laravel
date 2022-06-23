@@ -3,10 +3,12 @@ use App\Http\Controllers\Registro_doctorController;
 use App\Http\Controllers\EspecialidadController;
 use App\Http\Controllers\PerfildocController;
 use App\Http\Controllers\PerfilpaciController;
+use App\Http\Controllers\CitaController;
 use App\Models\Especialidad;
 use App\Models\Registro_doctor;
 use App\Models\Perfildoc;
 use App\Models\Perfilpaci;
+use App\Models\Cita;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,3 +37,5 @@ Route::resource('especialidad',EspecialidadController::class);
 Route::resource('perfilpaci',PerfilpaciController::class);
 
 Route::resource('registro_doctor',Registro_doctorController::class);
+
+Route::resource('cita',CitaController::class);

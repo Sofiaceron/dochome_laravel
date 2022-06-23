@@ -37,8 +37,7 @@ class Registro_doctorController extends Controller
     public function store(Request $request)
     {
         $registro_doctor = new Registro_doctor;
-        $registro_doctor->nombres = $request->nombres;
-        $registro_doctor->apellidos = $request->apellidos;
+        $registro_doctor->nombres_y_apellidos = $request->nombres_y_apellidos;
         $registro_doctor->sexo = $request->sexo;
         $registro_doctor->cedula = $request->cedula;
         $registro_doctor->fecha_expedicion = $request->fecha_expedicion;
@@ -81,11 +80,6 @@ class Registro_doctorController extends Controller
      */
     public function update(Request $request, Registro_doctor $registro_doctor)
     {
-        $registro_doctor->nombres = $request->nombres;
-        $registro_doctor->apellidos = $request->apellidos;
-        $registro_doctor->sexo = $request->sexo;
-        $registro_doctor->cedula = $request->cedula;
-        $registro_doctor->fecha_expedicion = $request->fecha_expedicion;
         $registro_doctor->telefono = $request->telefono;
         $registro_doctor->fcopia_cedula = $request->fcopia_cedula;
         $registro_doctor->fcopia_acta_certificacion = $request->fcopia_acta_certificacion;

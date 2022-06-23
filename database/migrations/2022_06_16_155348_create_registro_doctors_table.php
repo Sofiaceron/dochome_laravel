@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('registro_doctors', function (Blueprint $table) {
             $table->id();
-              $table->string('nombres',40);
-              $table->string('apellidos',40);
+              $table->string('nombres y apellidos',60);
               $table->enum('sexo',["M", "F"]);
               $table->integer('cedula');
               $table->date('fecha_expedicion');

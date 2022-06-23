@@ -7,12 +7,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-4 col-sm-2 ">
-                    <label>Nombres</label>
-                    <input type="text" name="nombres">
-                </div>
-                <div class="col-lg-6 col-md-4 col-sm-2 ">
-                    <label>Apellidos</label>
-                    <input type="text" name="apellidos">
+                    <label>Nombres y Apellidos</label>
+                    <input type="text" name="nombres_y_apellidos">
                 </div>
             </div>
             <div class="col-lg-6 col-md-4 col-sm-2">

@@ -49,5 +49,5 @@
 
         </tbody>
     </table>
-    {{ $registro_doctors->links() }}
+    {{$registro_doctors->links() }}
 @endsection
